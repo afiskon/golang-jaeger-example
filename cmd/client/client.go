@@ -17,7 +17,7 @@ func main() {
 	for {
 		ctx, span := trace.StartSpan(context.Background(), "main")
 		span.AddAttributes(
-			trace.StringAttribute("method", "GET"),
+			trace.StringAttribute("method", "POST"),
 		)
 		log.Printf("TraceId: %s\n", span.SpanContext().TraceID.String())
 		resp, err := sendPostRequest(ctx, "http://localhost:8080/api/v1/ping")
