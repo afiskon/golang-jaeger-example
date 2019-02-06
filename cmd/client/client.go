@@ -4,13 +4,12 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
-	"github.com/afiskon/golang-jaeger-example"
 	"io/ioutil"
 	"log"
 	"net/http"
 	"time"
-
 	"go.opencensus.io/trace"
+	"github.com/afiskon/golang-jaeger-example"
 )
 
 func main() {

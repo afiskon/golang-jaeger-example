@@ -4,11 +4,11 @@ import (
 	"context"
 	"encoding/json"
 	"flag"
+	"net/http"
+	"go.opencensus.io/trace"
 	"github.com/gorilla/mux"
 	"github.com/sirupsen/logrus"
 	"github.com/afiskon/golang-jaeger-example"
-	"go.opencensus.io/trace"
-	"net/http"
 )
 
 func PostHandler(w http.ResponseWriter, r *http.Request) {
